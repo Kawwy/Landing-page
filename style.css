@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+main
+{
+    font-family: "Heebo", sans-serif;
+}
+
+.landing
+{
+    min-height: 100vh;
+    background: url("./sunset.jpg");
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+.nav-links
+{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li
+{
+    padding-left: 10rem;
+    font-size: 1.2rem;
+}
+
+#logo
+{
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size: 1.75rem;
+}
+
+.big-text
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-weight: lighter;
+    color: transparent;
+    text-shadow: 0 0 5px #000;
+    opacity: 0.3;
+    font-family: "Lobster", cursive;
+}
+
+.intro
+{
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text
+{
+    color: rgb(227, 242, 255);
+    font-family: "Heebo", sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.slider
+{
+    background: rgba(114, 138, 164, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide
+{
+    overflow: hidden; 
+}
+
+.hide span
+{
+    transform: translateY(100%);
+    display: inline-block;
+}
