@@ -13,9 +13,10 @@ main
 
 .landing
 {
+    position: relative;
     min-height: 100vh;
-    /* background: #292929; */
-    background-image: url(./images/ocean.jpg);
+    background: #292929;
+    background-image: url(./images/single.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 0rem 5rem;
@@ -25,9 +26,11 @@ nav
 {
     position: fixed;
     width: 100%;
+    min-height: 10vh;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #fff; 
+    /* background-color: #101010; */
     justify-content: space-around;
     min-height: 10vh;
     
@@ -54,6 +57,7 @@ nav
     font-weight: lighter;
     font-size: 1.75rem;
     position: absolute;
+    padding: 0 2rem;
     left: 0%;
 }
 
@@ -65,25 +69,24 @@ nav .nav-links li a
 
 nav .nav-links li a:hover
 {
-    border: 1rem;
-    background-color: darkgray;
+    font-weight: bolder;
 }
 
 nav.active
 {
     position: fixed;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .big-text
 {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
     font-weight: lighter;
-    color: #fff;
+    color: #000;
     font-family: 'Berkshire Swash', cursive;
 }
 
