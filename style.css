@@ -11,17 +11,6 @@ main
     font-family: "Heebo", sans-serif;
 }
 
-.landing
-{
-    position: relative;
-    min-height: 100vh;
-    background: #292929;
-    background-image: url(./images/single.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0rem 5rem;
-}
-
 nav
 {
     position: fixed;
@@ -34,6 +23,16 @@ nav
     justify-content: space-around;
     min-height: 10vh;
     
+}
+
+.landing
+{
+    min-height: 100vh;
+    background: #292929;
+    background-image: url(./images/single.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0rem 5rem;
 }
 
 .nav-links
@@ -51,15 +50,6 @@ nav
     font-size: 1.2rem;
 }
 
-#logo
-{
-    font-family: "Lobster", cursive;
-    font-weight: lighter;
-    font-size: 1.75rem;
-    position: absolute;
-    padding: 0 2rem;
-    left: 0%;
-}
 
 nav .nav-links li a
 {
@@ -72,10 +62,14 @@ nav .nav-links li a:hover
     font-weight: bolder;
 }
 
-nav.active
+#logo
 {
-    position: fixed;
-    background-color: #000;
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size: 1.75rem;
+    position: absolute;
+    padding: 0 2rem;
+    left: 0%;
 }
 
 .big-text
@@ -141,4 +135,20 @@ nav.active
 {
     transform: translateY(100%);
     display: inline-block;
+}
+
+nav.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.sticky ul
+{
+    width: auto;
 }
