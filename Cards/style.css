@@ -19,6 +19,12 @@ body
     display: flex;
 }
 
+.proHead
+{
+    text-align: center;
+    justify-content: center;
+}
+
 .card
 {
     height: 400px;
@@ -63,7 +69,7 @@ p
 .card:hover .product
 {
     height: 150px;
-    bottom: 145px;
+    bottom: 100px;
     background: rgba(0, 0, 0, .8);
 }
 

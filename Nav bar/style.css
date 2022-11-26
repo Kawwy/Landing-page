@@ -24,6 +24,12 @@ nav
     text-align: center;
 }
 
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo
 {
     font-family: "Lobster", cursive;
@@ -71,6 +77,77 @@ nav.sticky ul
 nav.sticky .logo
 {
     color: #fff;
+}
+
+.container
+{
+    display: flex;
+}
+
+.proHead
+{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.card
+{
+    height: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+img
+{
+    height: 400px;
+    width: 300px;
+    transition: transform 1s;
+    border-radius: 3px;
+    object-fit: cover;  
+}
+
+.product
+{
+    height: 70px;
+    width: 280px;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    bottom: 75px;
+    background-color: rgba(27, 27, 27, .5);
+    color: #fff;
+}
+
+p
+{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover
+{
+    cursor: pointer;
+}
+
+.card:hover .product
+{
+    height: 150px;
+    bottom: 145px;
+    background: rgba(0, 0, 0, .8);
+}
+
+.card:hover p
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img
+{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
 }
 
 .intro
